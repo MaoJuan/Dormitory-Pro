@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/dortwoRL"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="双人寝室"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usernameRL"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_below="@id/dortwoRL">
+
+        <TextView
+            android:id="@+id/usernametwoTV"
+            android:text="学号："
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:background="#cccccc"
+            android:textSize="30sp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/usernametwoTV" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passwordRL"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_below="@+id/usernameRL">
+        <TextView
+            android:id="@+id/passwordTV"
+            android:text="校验码："
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_toRightOf="@+id/passwordTV"
+            android:background="#cccccc"
+            android:textSize="30sp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loginRL"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_below="@+id/passwordRL">
+
+        <Button
+            android:id="@+id/loginB"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="提交"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
