@@ -15,5 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
+        <activity android:name="SearMes"></activity>
+        <activity android:name=".SearBed"></activity>
+        <activity android:name=".DormiTwo"></activity>
+        <activity android:name=".DormiThree"></activity>
+        <activity android:name=".DormiFour"></activity>
+        <activity android:name=".DormiCat"></activity>
     </application>
 </manifest>
