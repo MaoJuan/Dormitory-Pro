@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/loginbg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,7 +24,7 @@
 
         <TextView
             android:id="@+id/username1TV"
-            android:text="学号1："
+            android:text="学    号1："
             android:textColor="#000000"
             android:textSize="30sp"
             android:layout_width="wrap_content"
@@ -35,7 +34,7 @@
             android:id="@+id/username1ET"
             android:background="#cccccc"
             android:textSize="30sp"
-            android:layout_width="260dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/username1TV" />
     </RelativeLayout>
@@ -71,7 +70,7 @@
 
         <TextView
             android:id="@+id/username2TV"
-            android:text="学号2："
+            android:text="学    号2："
             android:textColor="#000000"
             android:textSize="30sp"
             android:layout_width="wrap_content"
@@ -81,7 +80,7 @@
             android:id="@+id/username2ET"
             android:background="#cccccc"
             android:textSize="30sp"
-            android:layout_width="260dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/username2TV" />
     </RelativeLayout>
@@ -105,14 +104,36 @@
             android:textSize="30sp"
             android:layout_width="230dp"
             android:layout_height="wrap_content" />
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/thbuilnumRL"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_below="@id/password2RL">
+
+        <TextView
+            android:id="@+id/thbuilnumTV"
+            android:text="楼      号："
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/thbuilnumET"
+            android:background="#cccccc"
+            android:textSize="30sp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thbuilnumTV" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/loginRL"
         android:layout_width="match_parent"
         android:layout_height="45.0dp"
-        android:layout_below="@+id/password2RL">
+        android:layout_below="@+id/thbuilnumRL">
 
         <Button
             android:id="@+id/loginB"
